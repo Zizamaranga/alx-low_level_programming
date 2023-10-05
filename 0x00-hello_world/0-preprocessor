@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -E "$CFILE" > output.c
+gcc -E -P $CFILE | sed -n '1,2p' > c
