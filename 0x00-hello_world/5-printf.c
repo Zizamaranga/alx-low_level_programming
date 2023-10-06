@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - entry point of the function
+ * main - This is the entry point of the function.
  *
  * description: prints the said characters
  *
@@ -8,7 +8,7 @@
  *
  */
 
-int main(void) /* main - entry point of the function */
+int main(void) /* main - This is the entry point of the function */
 {
 	printf("with proper grammar, but the outcome is a piece of art,\n");
 	return (0);
