@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main: This is the entry point
+ * main - This is the entry point of the function
  *
  * Description: Prints programming is like building a multilingual puzzle
  * Return: Always returns 0 (success)
