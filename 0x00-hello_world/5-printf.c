@@ -1,11 +1,14 @@
 #include <stdio.h>
 /**
- *Main : entry point
- *prints the said characters
- *returns to 0_ success
+ * main - entry point of the function
+ *
+ * description: prints the said characters
+ *
+ * return: returns to 0 (success)
+ *
  */
 
-int main(void)
+int main(void) /* main - entry point of the function */
 {
 	printf("with proper grammar, but the outcome is a piece of art,\n");
 	return (0);
