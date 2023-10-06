@@ -1,11 +1,10 @@
 #include <stdio.h>
 /**
- * main - This is the entry point of the function.
+ * main - Entry point of the function.
  *
  * description: prints the said characters
  *
- * return: Always returns to 0 (success)
- * return main : returns to 0 (success)
+ * Return: Always 0 (Success)
  */
 
 int main(void)
