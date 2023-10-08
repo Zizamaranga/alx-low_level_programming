@@ -17,13 +17,13 @@ int main(void)
 	while (m <= '9')
 	{
 		putchar(m);
-		n++;
+		m++;
 	}
 
 	while (n <= 'f')
 	{
 		putchar(n);
-		m++;
+		n++;
 	}
 
 	putchar('\n');
