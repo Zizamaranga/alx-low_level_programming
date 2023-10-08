@@ -3,29 +3,27 @@
 /**
  * main - Entry point
  *
- * Description: Prints all single digit numbers un ascending order.
+ * Description: Prints all single-digit numbers in ascending order.
  *
  * Return: Always 0 (Success)
- *
  */
 
 int main(void)
 {
-	int n = '0';
+	int n = 0;
 
-	while (n <= '9')
+	while (n <= 9)
 	{
 		putchar(n + '0');
-		if (n < '9' && n != '0')
-		{
-			putchar(',');
-			putchar(' ');
-		}
+		if (n < 9)
+	{
+		putchar(',');
+		putchar(' ');
+	}
 		n++;
 	}
+
 	putchar('\n');
 	return (0);
 }
-
-
 
