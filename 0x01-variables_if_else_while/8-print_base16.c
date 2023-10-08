@@ -14,15 +14,15 @@ int main(void)
 	char n = 'a';
 	int m = '0';
 
-	while (n <= 'f')
-	{
-		putchar(n);
-		n++;
-	}
-
 	while (m <= '9')
 	{
 		putchar(m);
+		n++;
+	}
+
+	while (n <= 'f')
+	{
+		putchar(n);
 		m++;
 	}
 
