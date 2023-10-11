@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
  * void -Entry Point
  * description - prints alphabet
@@ -11,13 +11,13 @@
  *
  */
 
-void print_alphabet(void);
+void print_alphabet(void)
 {
-	int n = 'a';
-	while(a <= 'z')
+	int ch = 'a';
+	while(ch <= 'z')
 	{
-		putchar(n);
-		n++;
+		putchar(ch);
+		ch++;
 	}
 	{
 		putchar("\n");
