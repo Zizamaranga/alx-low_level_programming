@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 /**
  * void -Entry Point
  * description - prints alphabet
@@ -13,14 +12,14 @@
 
 void print_alphabet(void)
 {
-	int ch = 'a';
-	while(ch <= 'z')
+	char letter = 'a';
+	while(letter <= 'z')
 	{
-		putchar(ch);
-		ch++;
+		_putchar(letter);
+		letter++;
 	}
 	{
-		putchar("\n");
+		_putchar("\n");
 		return (0);
 	}
 }
