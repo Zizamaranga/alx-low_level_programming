@@ -6,7 +6,7 @@
  * @d: integer
  *
  *
- * Return: Always 0 (Success)
+ * Return: Always r (Success)
  *
  */
 
