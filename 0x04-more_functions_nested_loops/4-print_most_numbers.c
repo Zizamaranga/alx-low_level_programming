@@ -1,0 +1,21 @@
+#include "main.h"
+/**
+ * print_most_numbers - Entry point
+ *
+ *
+ *
+ *
+ */
+
+void print_most_numbers(void)
+{
+	char n = '0';
+
+	while (n <= '9' && n != '2' && n != '4')
+	{
+		_putchar(n);
+		n++;
+	}
+	_putchar('\n');
+}
+
