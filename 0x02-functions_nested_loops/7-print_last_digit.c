@@ -25,7 +25,6 @@ int print_last_digit(int d)
 	}
 
 	_putchar(r);
-	_putchar('\n');
 
 	return (r);
 }
