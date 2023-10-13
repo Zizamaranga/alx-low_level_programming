@@ -13,9 +13,11 @@ long largestPrimeFactor(long n)
 	while (n % 2 == 0)
 
 	{
-		maxPrime == 2;
+		maxPrime = 2;
 		n >>= 1;
 	}
+
+	long i;
 
 	for (long i = 3; i * i <= n; i += 2)
 	{
