@@ -11,17 +11,17 @@ char *_strcat(char *dest, char *src)
 {
 	char *ptr = dest;
 
-	while (*dest != '\0')
+	while (*dest)
 	{
-		dest++;
+		*dest++;
 	}
 
-	while (*dest != '\0')
+	while (*src)
 	{
 		*dest = *src;
-		dest++;
-		src++;
+		*dest++;
+		*src++;
 	}
 	*dest = '\0';
-	return (ptr);
+	return (*ptr);
 }
