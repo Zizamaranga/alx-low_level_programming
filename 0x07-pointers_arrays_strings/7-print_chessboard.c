@@ -1,11 +1,8 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
  * print_chessboard - Prints chessboard
- * @a: 2D array representing the chessboard
- *
- * Description: Each cell represents a square on chessboard.
+ * @a: The chessboard printed
  */
 void print_chessboard(char (*a)[8])
 {
@@ -15,11 +12,12 @@ void print_chessboard(char (*a)[8])
 	{
 		for (l = 0; l < 8; l++)
 		{
-			printf("%c", a[k][l]);
-			if (l != 7)
-				printf(" ");
+			if (l != 0)
+				_putchar(' ');
+			_putchar(a[k][l]);
 		}
-		printf("\n");
+		_putchar('\n');
 	}
 }
+
 
