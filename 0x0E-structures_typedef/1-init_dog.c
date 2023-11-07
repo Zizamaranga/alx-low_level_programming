@@ -1,22 +1,5 @@
 #include <stddef.h>
-
-/**
- * struct dog - struct that represents chars of dog.
- * @name: The name
- * @age: The age
- * @owner: The owner
- *
- * Description: This struct represents the
- * characteristics of a dog including its name,
- * age, and owner's name.
- */
-struct dog
-{
-	char *name;
-	float age;
-	char *owner;
-};
-
+#include "dog.h"
 /**
  * init_dog - Initialize variable of type struct dog
  * @d: A pointer to the struct dog initialize
