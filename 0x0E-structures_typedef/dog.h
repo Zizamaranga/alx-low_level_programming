@@ -1,15 +1,15 @@
-/**
- * struct dog - struct that representing chars of dog.
- * @name: The name
- * @age: The age
- * @owner: The owner
- * Description: This struct represents the characteristics 
- * age, and owner's name.
- */
-struct dog 
-{
-	char *name;
-	float age;
-	char *owner;
+#ifndef DOG_H
+#define DOG_H
+
+struct dog {
+    char *name;
+    float age;
+    char *owner;
 };
+
+void init_dog(struct dog *d, char *name, float age, char *owner);
+void print_dog(struct dog *d);
+
+#endif /* DOG_H */
+
 
