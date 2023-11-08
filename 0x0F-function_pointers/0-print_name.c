@@ -1,64 +1,72 @@
-#include <stdio.h>
 #include "function_pointers.h"
 
-/**
- * print_name - Prints a name
- * @name: Pointer to the name to be printed
- * @f: Pointer to a function that prints a character string
- */
-void print_name(char *name, void (*f)(char *))
-{
-	if (name && f)
-		f(name);
-}
 
 /**
- * print_name_as_is - Prints a name as is
- * @name: Name of the person
- *
- * Return: Nothing.
+ * array_iterator - Executes a function given as a parameter on each element of an array.
+ * @array: Pointer to the array
+ * @size: Size of the array
+ * @action: Pointer to the function to be used
  */
-void print_name_as_is(char *name)
+void array_iterator(int *array, size_t size, void (*action)(int))
 {
-	printf("Hello, my name is %s\n", name);
-}
+	size_t i;
 
-/**
- * print_name_uppercase - Prints a name in uppercase
- * @name: Name of the person
- *
- * Return: Nothing.
- */
-void print_name_uppercase(char *name)
-{
-	unsigned int i = 0;
-
-	printf("Hello, my uppercase name is ");
-	while (name[i])
+	if (array && action)
 	{
-		if (name[i] >= 'a' && name[i] <= 'z')
+		for (i = 0; i < size; i++)
 		{
-			putchar(name[i] + 'A' - 'a');
+			action(array[i]);
 		}
-		else
-		{
-			putchar(name[i]);
-		}
-		i++;
 	}
 }
 
 /**
- * main - Entry point
+ * print_elem - Prints an integer
+ * @elem: The integer to print
  *
- * Return: Always 0.
+ * Return: Nothing.
  */
-int main(void)
+void print_elem(int elem)
 {
-	print_name("Bob", print_name_as_is);
-	print_name("Bob Dylan", print_name_uppercase);
-	printf("\n");
-	return (0);
+	/* Convert integer to string manually */
+	if (elem < 0)
+	{
+		_putchar('-');
+		elem *= -1;
+	}
+	if (elem / 10)
+	{
+		print_elem(elem / 10);
+	}
+	_putchar(elem % 10 + '0');
 }
+
+/**
+ * print_elem_hex - Prints an integer in hexadecimal
+ * @elem: The integer to print
+ *
+ * Return: Nothing.
+ */
+void print_elem_hex(int elem)
+{
+	int temp;
+	_putchar('0');
+	_putchar('x');
+	if (elem == 0)
+	{
+		_putchar('0');
+		return;
+	}
+	while (elem != 0)
+	{
+		temp = elem % 16;
+		elem /= 16;
+		if (temp < 10)
+			_putchar(temp + '0');
+		else
+			_putchar(temp - 10 + 'a');
+	}
+}
+
 
 
